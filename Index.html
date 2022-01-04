@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- AUTOR: JOEL ARMANDO ALDUCIN R / 25/12/2021 / EXPERIENCIA DEL CLIENTE -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@600&family=Lato:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? familia = Lato: ital, wght @ 0,700; 0,900; 1,700 & display = swap "rel =" stylesheet ">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Tangerine">
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N7XDDGN');</script>
+    <!-- End Google Tag Manager --> 
+
+</head>
+<body>
+
+    <div class="container" id="container">
+        <input type="checkbox" id="btn-mas">
+        <div class="btn-mas">
+            <a href="#inicio"><img src="/icon/arrow_upward_white_24dp.svg"></a>
+        </div>
+    </div>
+    
+    <header>
+
+    <span class="nav-bar" id="btnMenu"><img  src="/icon/menu_white_24dp.svg"> Menú</span>
+
+        <nav class="main-nav" id="inicio">
+           
+            <div class="img-logo">
+                <img src="/img/valmex-logo 1.png">
+            </div>
+
+            <ul class="menu" id="menu">
+                
+                
+                <li class="menu__item"><a href="#inicio" class="menu__link" >INICIO</a></li>
+                    <li class="menu__item container-submenu">
+                        <a href="#" class="menu__link submenu-btn">SERVICIOS FINANCIEROS<img class="icon__menu" src="/icon/arrow_drop_down_black_24dp.svg"></a>
+                        <ul class="submenu">
+                            <li class="menu__item"><a href="#" class="menu__link"><b>PERSONAS MORALES</b></a></li>
+                            <li class="menu__item "><a href="#arrendamiento_fin" class="menu__link " onclick="mostrarcontarren();">-  ARRENDAMIENTO FINANCIERO</a></li>
+                            <li class="menu__item " ><a href="#arrendamiento_p" class="menu__link" onclick="mostrarcontpuro();">-  ARRENDAMIENTO PURO</a></li>
+                            <li class="menu__item "><a href="#cred_auto" class="menu__link lista" onclick="mostrarcontauto();">-  CRÉDITO AUTOMOTRÍZ</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link"><b>PERSONAS FÍSICAS</b></a></li>
+                            <li class="menu__item "><a href="#plan" class="menu__link " onclick="mostrarcontti();">-  PLAN X TI</a></li>
+                        </ul>
+                    
+                <li class="menu__item"><a href="#quienessom" class="menu__link" onclick="mostrarquienessom();">QUIENES SOMOS</a></li>
+                <li class="menu__item"><a href="#contactanos" class="menu__link" id="cont">CONTÁCTANOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   <div class="container-slider">
+    
+       <div class="slider" id="slider">
+        
+            <div class="slider__section"><img src="/img/Auto1.png" alt="" class="slider__img"></div>
+            <div class="slider__section"><img src="/img/planporti.png" alt="" class="slider__img"></div>
+            <div class="slider__section"><img src="/img/arrendamientopuro.png" alt="" class="slider__img"></div>
+            <div class="slider__section"><img src="/img/arrendamientofinanciero.png" alt="" class="slider__img"></div>
+       </div>
+
+   <div class="slider__btn slider__btn--right" id="btn-right"><img class="flecha" src="/icon/navigate_next_black_24dp.svg"></div>
+   <div class="slider__btn slider__btn--left" id="btn-left"><img class="flecha" src="/icon/keyboard_arrow_left_black_24dp.svg"></div>
+   </div>
+   
+   <div class="container-iconos">
+
+    <div class="container-icon">
+        
+        <div class="icon1">
+            <img src="/icon/icon-car.svg"></div>
+            <h3><strong>ARRENDAMIENTO FINANCIERO</strong></ARRENDAMIENTO></h3>
+            <p>Adquisición de activos fijos productivos </p>
+            <h3 id="ver-mas"><a href="#arrendamiento_fin" onclick="mostrarcontarren();">Ver más</a></h3>
+            <img src="/icon/baja.svg">
+            </div>
+    
+
+    <div class="container-icon">
+       
+        <div class="icon1"> 
+            <img src="/icon/icon-car.svg"></div>
+            <h3><strong>ARRENDAMIENTO PURO</strong></h3>
+            <p>Es un contrato que se establece</p>
+            <h3 class="ver-mas" id="ver-mas" onclick="mostrarcontpuro();"><a href="#arrendamiento_p">Ver más</a></h3>
+            <img src="/icon/baja.svg">
+    </div>
+
+    <div class="container-icon">
+        
+        <div class="icon1">
+            <img src="/icon/icon-car.svg"></div>
+            <h3><strong>CRÉDITO AUTOMOTRIZ</strong></h3>
+            <p>Suma de dinero a disposición del Acreditado</p>
+            <h3 id="ver-mas" onclick="mostrarcontauto();"><a href="#cred_auto">Ver más</a></h3>
+            <img src="/icon/baja.svg">
+    </div>
+
+    <div class="container-icon">
+        
+        <div class="icon1">
+            <img src="/icon/icon-car.svg"></div>
+            <h3><strong>PLAN POR TI</strong></h3>
+            <p>Adquiere el automóvil que desees</p>
+            <h3 class="ver-mas" id="ver-mas" onclick="mostrarcontti();"><a href="#plan">Ver más</a></h3>
+            <img src="/icon/baja.svg">
+        </div> 
+
+   </div>
+    
+   <div class="container-quienes" id="quienessom">
+    
+    <div class="container-quienes-img">
+    <h1>QUIENES SOMOS</h1>
+    <p>Especialistas en proveer soluciones de financiamiento especializado desde 1975.
+        Somos subsidiaria de GNP Seguros,  aseguradora mexicana de mayor experiencia en nuestro país. Formamos parte de uno de los conglomerados empresariales más grandes de México, Grupo BAL,  lo que fortalece nuestra estructura financiera, permitiéndonos contar con fuentes de recursos preferenciales, que están reflejadas en los productos financieros que ofrecemos.
+       </p>
+    <img class="img-quienes" src="/img/Presentación sin título.png">
+    <p>
+        Dentro de nuestra cartera contamos con empresas de diversos sectores desde grandes corporaciones, compañías transnacionales, así como pequeñas y medianas empresas.
+        
+    </p>
+    
+    
+    </div>
+   
+   </div>
+
+   <!-- PERSONAS MORALES -->
+    <div class="container_personas_morales" id="contpermor">
+        
+         <div class="container1" id="arrenfin">
+           
+            <h1 id="arrendamiento_fin">ARRENDAMIENTO FINANCIERO</h1>
+            <div class="parrafo">
+            <p>
+            El  Arrendamiento Financiero es un instrumento de financiamiento para la adquisición de activos fijos productivos (en nuestro caso financiamos exclusivamente equipo de transporte), a través del cual  Valmex (Arrendador) compra el (los) vehículo(s) elegidos por su Empresa (Arrendatario), quien adquiere 
+            el derecho del uso o goce del (de los) mismo(s).
+            </p>
+        </div>
+
+            <div class="section-buttom-img">
+
+              <div class="arrendamiento-descripcion" id="beneficios">
+                
+                <ul><h3>DISTRUTA DE SUS BENEFICIOS</h3><br>
+                   <li>Vehículos nuevos a precio de contado o de flotilla </li><br>
+                   <li>Esquemas de pagos flexibles </li><br>
+                   <li>El cliente celebra un contrato con una empresa</li><br>
+                   <li>En caso de siniestro en que la compañía de seguros declare la pérdida total del automóvil<br> Valmex cobra la indemnización correspondiente, devolviendo al arrendatario  la diferencia<br> entre el importe recuperado y el saldo insoluto existente.</li><br>
+                </ul>
+              </div>
+
+              <div id="carac-arrend-fin">
+                <h3>CARACTERISTICAS</h3><br>
+                <p>
+                  La propiedad fiscal del bien arrendado corresponde al Arrendatario, quien lo registra dentro de sus activos. La propiedad jurídica se transfiere al Arrendatario al ejercer la opción de compra.
+                  La deducibilidad tanto de la depreciación como de la carga financiera la realiza el Arrendatario, conforme a lo estipulado por las disposiciones fiscales para ISR y IETU. El IVA de las rentas es acreditado por el cliente, conforme a la ley de la materia.
+                  Al final del contrato el Arrendatario podrá optar por ejercer la opción de compra a un valor simbólico.<br><br>
+                  Cada renta mensual está compuesta por una porción de capital, de acuerdo con la tabla de amortización respectiva, más los intereses del periodo, calculados sobre saldos insolutos y son pagaderas en forma mensual vencida.
+                  El desembolso inicial corresponde al IVA del precio de adquisición del bien, ya que este impuesto no es financiable, al importe de la comisión de apertura del contrato y a los gastos de ratificación ante Fedatario Público.
+                  Puede realizar una o varias disposiciones durante los 12 meses siguientes que fue autorizado el arrendamiento
+                  No existe penalidad por cancelación anticipada.<br><br>
+                  Los gastos de mantenimiento, verificación, tenencia, y cualquier otro impuesto o derecho, así como cualquier otro gasto necesario para mantener los vehículos en óptimas condiciones serán a cargo de la arrendataria.
+                  Se instrumenta mediante contrato de arrendamiento financiero y se ratifica ante Corredor Público
+                </p>
+            </div>
+            <div id="condiciones-arre">
+                <h3>CONDICIONES</h3><br>
+                <p>
+                    1. Tasa fija o variable en función a la TIIE (Tasa de Interés Interbancaria de Equilibrio).<br>
+                    2. Plazos de 12, 24, 36, 48 y 60 meses.<br>
+                    3. Pago inicial:<br><br>
+
+                        A) Una renta en depósito.<br>
+                        B) Depósito en garantía<br>
+                        C) Comisión de apertura 2%.<br>
+                        D) Gastos de ratificación.<br><br>
+
+                    4. Opción de compra: 1% del valor original de la unidad.<br>
+                    5. Será necesaria la contratación de un seguro de cobertura amplia sobre la(s) unidad(es) a financiar con endoso preferencial a Valmex, mismo que deberá ser cubierto por el cliente de contado o puede ser financiado por Valmex. 
+                </p>
+            </div>
+              <div class="botones">
+                  <button class="boton" onclick="mostrarbeneficios();">BENEFICIOS</button>
+                  <a href="http://127.0.0.1:5500/pdf.html" target="_blank"><button class="boton" id="caract">REQUISITOS</button></a>
+                  <button class="boton" onclick="mostrarcarac();">CARACTERISTICAS</button> 
+                  <button class="boton" onclick="mostrarcondiciones();">CONDICIONES</button>
+        
+              </div>
+            </div>
+         </div>
+
+         <div class="container1" id="arrenpuro">
+            <h1 id="arrendamiento_p">ARRENDAMIENTO PURO</h1>
+            <div class="parrafo">
+            <p>
+            Es un contrato que se establece entre Valmex ( Arrendadora) y su Empresa (Arrendatario), mediante el cual Valmex adquiere uno o varios vehículos y otorga su uso o goce temporal por un plazo forzoso determinado al Arrendatario, quien se obliga a pagar periódicamente un precio determinado o determinable que se denomina renta.
+            </p>
+            </div>
+            <div class="section-buttom-img">
+                <div class="img-buttom-section" id="arren-puro">
+                    <ul><h3>DISTRUTA DE SUS BENEFICIOS</h3><br>
+                        <li> Representa una excelente alternativa para empresas que no desean afectar sus índices de apalancamiento</li><br>
+                        <li> Valmex adquiere los vehículos a precios preferenciales que las plantas armadoras le ofrecen</li><br>
+                        <li> Permite realizar pagos iniciales mínimos, optimizando el flujo de efectivo del Arrendatario</li><br>
+                        <li> Permite al Arrendatario pagar mensualidades inferiores a las de una compraventa a plazos.</li><br>
+                     </ul>
+                </div>
+                <div id="caract-puro">
+                    <h3>CARACTERISTICAS</h3><br><br>
+                    <p>
+                        1. La propiedad jurídica y fiscal de los bienes corresponde a la Arrendadora, quien los registra dentro de sus activos.<br><br>
+                        2. El Arrendatario registra el monto total de las rentas antes de IVA, como un gasto. La deducibilidad se realiza de acuerdo a lo estipulado por las disposiciones fiscales para ISR y IETU.<br><br>
+                        3. El desembolso inicial es mínimo y corresponde a una renta en depósito, el importe de la comisión de apertura del contrato y a los gastos de ratificación ante Fedatario Público.<br><br>
+                        4. Puede realizar una o varias disposiciones durante los 12 meses siguientes que fue autorizado el arrendamiento.<br><br>
+                        5. Existe límite de kilometraje y penalidad por devolución anticipada del bien.<br><br>
+                        6. Los gastos de mantenimiento, verificación, tenencia, y cualquier otro impuesto o derecho, así como cualquier otro gasto necesario para mantener los vehículos en óptimas condiciones serán a cargo de la Arrendataria.<br><br>
+                        7. Al finalizar el contrato, la Arrendataria podrá continuar con la renta del vehículo, devolverlo o adquirirlo ella o un tercero a valor de mercado y rentar uno nuevo.<br><br>
+                        8. Se instrumenta mediante contrato de arrendamiento y se ratifica ante Corredor Público<br><br>
+                    </p>
+                </div>
+                <div id="condiciones-puro">
+                    <h3>DISTRUTA DE SUS BENEFICIOS</h3><br>
+                    <p>
+                        1. Renta fija o variable en función a la TIIE (Tasa de Interés Interbancaria de Equilibrio).<br>
+                        2. Plazos de 12, 24, 36, 48 y 60 meses.<br>
+                        3. Pago inicial:<br><br>
+    
+                            A) Una renta en depósito.<br>
+                            B) Comisión de apertura 2%.<br>
+                            C) Gastos de ratificación.<br><br>
+    
+                        4) Será necesaria la contratación de un seguro de cobertura amplia sobre la(s) unidad(es) a financiar con endoso preferencial a Valmex, mismo que deberá ser cubierto por el cliente de contado o puede ser financiado por Valmex<br>
+                    </p>
+                   
+                </div>
+                
+            <div class="botones">
+                <button class="boton" onclick="mostrarbeneficios2();">BENEFICIOS</button>
+            <button class="boton" onclick="mostrarcarac2();">CARACTERISTICAS</button>
+            <button class="boton" onclick="mostrarcondiciones2();">REQUISITOS Y CONDICIONES</button>
+            <div class="logo-flotilla">
+                <img  src="/img/logoflotillas.JPG">
+            </div>
+            </div>
+           
+                </div>
+               
+                
+             </div>
+             
+
+             <div class="container1" id="credauto">
+                <h1 id="cred_auto">CRÈDITO AUTOMOTRIZ</h1>
+                <div class="parrafo">
+                <p>
+                    Con el Programa de Financiamiento Automotriz PLAN POR TI (exclusivo para colaboradores de las empresas de Grupo Bal), adquieres el automóvil que desees, pagándolo en la forma y plazo que mejor te acomode ya sea a través de Crédito Automotriz o Arrendamiento Financiero.<br>
+                </p>
+                </div>
+                <div class="section-buttom-img">
+                    <div class="img-buttom-section" id="beneficios-automotriz">
+                        <ul><h3>DISTRUTA DE SUS BENEFICIOS</h3><br><br>
+                            <li>Tasa de interés fija o variable </li><br>
+                            <li>Plazo de 12 a 72 meses</li><br>
+                            <li>Flexibilidad en el manejo de tus pagos</li><br>
+                            <li>Seguro GNP con condiciones preferenciales como empleado de Grupo Bal</li><br>
+                            <li>Seguro de crédito sin costo</li><br>
+                         </ul>
+                         <p>
+                            El financiamiento puede usarse en autos nuevos o seminuevos hasta con 5 años de antigüedad. El monto asignado del financiamiento es determinado de acuerdo a los ingresos mensuales del acreditado y su nivel de endeudamiento en su reporte de buró de crédito.<br><br>
+                            Sujeto a aprobación de crédito
+                         </p>
+                    </div>
+                    <div id="carac-automotriz">
+                        <h3>CARACTERISTICAS</h3><br><br>
+                        <p>
+                            1.- La propiedad fiscal y jurídica del bien corresponde al Acreditado, quien lo registra dentro de sus activos.<br><br>
+                            2.- La deducibilidad tanto de la depreciación como de la carga financiera la realiza el Acreditado, conforme a las disposiciones fiscales vigentes para ISR y IETU.<br><br>
+                            3.- Al final del contrato y una vez cubiertas todas las obligaciones del Acreditado, Valmex libera la garantía.<br><br>
+                            4.- Los pagos mensuales están compuestos por una porción de capital, de acuerdo con la tabla de amortización respectiva, más los intereses del periodo, calculados sobre saldos insolutos.<br><br>
+                            5.- El desembolso inicial es mínimo y corresponde a el importe de la comisión de apertura del contrato.<br><br>
+                            6.- Puede realizar una o varias disposiciones durante los 12 meses siguientes que fue autorizado.<br><br>
+                            7.- Los gastos de mantenimiento, verificación, tenencia, y cualquier otro impuesto o derecho, así como cualquier otro gasto necesario para mantener los vehículos en óptimas condiciones serán a cargo del Acreditado.<br><br>
+                        </p>
+                    </div>
+                    <div id="condiciones-automotriz">
+                        <h3>CONDICIONES</h3><br>
+                        <p>
+                            1. Tasa de interés fija o variable en función a la TIIE (Tasa de Interés Interbancaria de Equilibrio).<br>
+                            2. Plazos de 12, 24, 36, 48 y 60 meses.<br>
+                            3. Pago inicial:<br><br>
+
+                                A) Comisión de apertura.<br>
+
+                            4. Será necesaria la contratación de un seguro de cobertura amplia sobre la(s) unidad(es) a financiar con endoso preferencial a Valmex, mismo que deberá ser cubierto por el cliente de contado o puede ser financiado por Valmex.<br><br>
+                        </p><br><br>
+                        <h3>COMISIONES RELEVANTES</h3><br>
+                        <p>
+                            Apertura de Crédito: 3 % más IVA; porcentaje que se aplicará al importe total del Crédito otorgado, el cual deberá pagarse en el momento de su disposición.
+                        </p><br>
+                    </div>
+                    <div id="modalidadesycat">
+                        <h3>MODALIDADES DE CONTRATACIÓN Y C.A.T.</h3><br><br>
+                        <p>
+                            - Apertura de crédito simple con Garantía Prendaria (Automotriz) en pesos a tasa fija y variable. Plazos desde 12 hasta 60 meses, la periodicidad de pagos podrá ser de acuerdo a las necesidades del acreditado y se podrán contratar periodos de gracia para el pago de capital. Sólo un pago inicial de comisión por apertura.<br>
+
+                            - Será necesaria la contratación de un seguro de cobertura amplia sobre la(s) unidad(es) a financiar con endoso preferencial a Valmex, mismo que deberá ser cubierto por el cliente de contado o puede ser financiado por Valmex.<br><br>
+                        </p>
+                        <h3>C.A.T. COSTO ANUAL TOTAL: </h3><br><br>
+                        <img src="/img/CAT.png">
+
+                    </div>
+                <div class="botones">
+                    <button class="boton" onclick="mostrarbeneficios3();" >BENEFICIOS</button>
+                <button class="boton" onclick="mostrarcarac3();">CARACTERISTICAS</button>
+                <button class="boton" onclick="mostrarmodal3();">MODALIDADES DE CONTRATACIÒN Y C.A.T.</button>
+                <button class="boton" >REQUISITOS</button>
+                <button class="boton" onclick="mostrarcondiciones3();">COMISIONES RELEVANTES Y CONDICIONES </button> 
+                
+                     </div>
+                    </div>
+                 </div>
+
+    </div>
+
+   <!-- PERSONAS FISICAS -->
+
+    <div class="container-personas-fisicas" id="contperfi">
+
+        
+        <div class="container1">
+            <h1 id="plan">PLAN POR TI</h1>
+            <div class="parrafo">
+            <p>
+                Con el Programa de Financiamiento Automotriz PLAN POR TI, adquieres el automóvil que desees, pagándolo en la forma y plazo que mejor te acomode ya sea a través de Arrendamiento Financiero o Crédito Automotriz.
+            </p>
+            </div>
+            <div class="section-buttom-img">
+                <div class="img-buttom-section" id="condicionesporti">
+                    <h3>CONDICIONES GENERALES</h3><br><br>
+                   <p>
+                    <strong>Participantes del Programa:</strong> Empleados de las Empresas del Grupo Bal.<br><br>
+
+                    <strong>Automóviles que puedes adquirir:</strong> Nuevos y usados, de todas las marcas pudiéndolos adquirir de la Agencia o Persona que prefieras. Si así lo deseas, te ayudaremos a cotizar con las Agencias que ya nos atienden. Obtenemos precios especiales y de flotilla.<br>
+                    
+                    Mediante la figura de Crédito Automotriz, tendrás oportunidad de obtener recursos frescos para hacer frente a otros compromisos sin deshacerte de tu automóvil. Los automóviles usados no deben tener antigüedad mayor a cuatro años. El monto de la operación será determinado en forma conjunta de acuerdo con tu capacidad de endeudamiento.<br><br>
+                    
+                    <strong>Estudio de Crédito:</strong>  Valmex realizará un breve estudio y su Comité de Crédito aprueba o rechaza las solicitudes de financiamiento. De acuerdo a los criterios del Comité, es posible que te sea solicitado algún Aval para dar viabilidad a tu solicitud.<br><br>
+                    
+                    <strong>Capacidad de pago:</strong> Es el importe mensual que puedes destinar al pago del financiamiento. Corresponde al 25% de tu sueldo neto, que se determina restando al sueldo nominal el 30% estimado de impuestos.<br><br>
+                    
+                    <strong>Monto máximo de financiamiento:</strong> Es la cantidad que te podemos financiar, de acuerdo a tu capacidad de pago y al plazo. Para conocer tu capacidad envíanos por correo electrónico tu antigüedad y sueldo bruto (sin descuentos) a frobledo@avalmex.com.mx  o  promocion@avalmex.com.mx
+
+                   </p>
+                </div>
+                <div id="condiciones-fin-pag">
+                    <h3>CONDICIONES FINANCIERAS</h3><br><br>
+                    <p>
+                        <strong>Arrendamiento Financiero Automotriz “Plan por Ti”</strong><br><br>
+                        Moneda: Pesos<br>
+                        Plazos: de 12 a 60 meses<br>
+                        Pago Inicial:<br>
+                        Comisión de apertura: 0.75% más IVA<br>
+                        Tasa de interés fija y variable<br>
+                        Pago Final (Opción de Compra): $1,000.00 más IVA<br>
+                        “Precios preferenciales en algunas marcas (mejores que los de contado)”<br><br>
+
+                        <strong>Crédito Automotriz “Plan por Tí”</strong><br><br>
+                        Moneda: Pesos<br>
+                        Plazos: de 12 a 60 meses<br>
+                        Pago Inicial:<br>
+                        Comisión de apertura: 0.75% más IVA<br>
+                        Tasa de interés fija y variable<br>
+                        Para ambos productos será necesaria la contratación de un seguro de cobertura amplia sobre la unidad a financiar con endoso preferencial a Valmex, mismo que deberá ser cubierto por el cliente de contado o puede ser financiado.<br><br>
+
+                        Define tu propio plan de pagos solicitando una cotización y comenta con el Ejecutivo tus inquietudes para diseñar el esquema adecuado a tus necesidades al  teléfono: 57052618, ext. 2114 y 2129, o vía correo electrónico a promocion@avalmex.com.mx  o  frobledo@avalmex.com.mx<br><br>
+
+                        VALMEX SOLUCIONES FINANCIERAS, S.A. DE C.V., SOFOM, E.N.R. se reserva el derecho de modificar estos términos y condiciones sin necesidad de aviso previo, por variaciones de mercado.<br>
+
+                        Sujeto a aprobación de crédito
+                    </p>
+                </div>
+            <div class="botones">
+            <button class="boton" onclick="mostrarcondti();">CONDICIONES GENERALES</button>
+            <button class="boton" onclick="mostrarcondfinti();">CONDICIONES FINANCIERAS Y PAGOS INNICIALES</button>
+            
+            </div>
+                </div>
+             </div>
+    </div>
+
+</div>
+
+    <div class="aviso-p" id="aviso-privacidad">
+        <h3 class="titulo-gris">Aviso de Privacidad Integral Valmex</h3><br>
+        <p>
+         Soluciones Financieras, S.A. de C.V., SOFOM, E.N.R.
+El responsable del tratamiento es Valmex Soluciones Financieras, S.A. de C.V., SOFOM, E.N.R., (Valmex) con domicilio en calle Viena, No. 5, piso 1, colonia Juárez, C.P. 06600, alcaldía Cuauhtémoc, en la Ciudad de México.<br>
+Para cumplir las finalidades previstas en el presente Aviso se tratarán las siguientes categorías de datos personales: identificación, patrimoniales, financieros, laborales, tránsito y migratorios, sobre juicios, procedimientos administrativos seguidos en forma de juicio y/o jurisdiccionales, y sensibles (biométricos tales como: imagen y videograbación).<br>
+Los datos personales para clientes, solicitantes, beneficiarios, obligados solidarios o avales, proveedores de recursos y cualquier persona que ingrese a las instalaciones, oficinas o representaciones de Valmex, se tratarán de acuerdo con las siguientes finalidades:<br><br>
+<h5 class="titulo-gris">A)Primarias</h5><br>
+Se utilizarán para evaluar su solicitud de financiamiento, con el objeto de rechazar o autorizar su solicitud, para cobrar, administrar, mantener el contrato hasta el plazo estipulado sobre los Contratos de Arrendamiento Financiero, Arrendamiento Puro, Apertura de Crédito Simple sin Garantía o con Garantía Prendaria e Hipotecaria y Préstamos Quirografarios, Venta de activos (bienes automotrices devueltos de arrendamiento puro), en cumplimiento a nuestras obligaciones consignadas en la Ley General de Organizaciones Auxiliares del Crédito, la Ley de Títulos y Operaciones de Crédito y demás leyes y disposiciones que nos aplican.<br>
+Para llevar a cabo procesos de disociación y generar estudios estadísticos y actividades de investigación.<br>
+Se utilizarán para todos los fines vinculados con el acceso, control o videovigilancia/grabación para la seguridad e integridad en las instalaciones.<br><br>
+<h5 class="titulo-gris">B)Secundarias</h5><br>
+Con fines de mercadotecnia, publicidad o prospección comercial para ofrecerle otros de nuestros productos, servicios y promociones.<br>
+Con fines de evaluar la calidad del servicio y realizar estudios estadísticos, así como contactar a sus familiares y/o terceros, nombrados para contacto en caso de emergencia, con la misma finalidad.<br>
+Con la finalidad de invitarlo a participar en concursos y/o actividades altruistas sin fines de lucro.<br>
+Si usted no está de acuerdo con las finalidades secundarias, podrá manifestar su negativa siguiendo los mecanismos de la página www.avalmex.com.mx en el apartado Aviso de Privacidad, según corresponda:<br>
+En caso de haber proporcionado a Valmex sus datos en forma personalI o directaII , podrá hacerlo en cualquier momento.<br>
+Si Valmex obtiene sus datos de forma indirectaIII , tendrá un plazo de cinco días hábiles.<br>
+Los datos a que se refiere este Aviso podrán ser transferidos a:<br><br>
+Sociedades relacionadas, con la finalidad de ofrecerle otros productos y servicios;<br>
+Autoridades mexicanas y extranjeras, con la finalidad de dar cumplimiento a nuestras obligaciones derivadas de leyes, tratados o acuerdos internacionales como Sociedad Financiera de Objeto Múltiple, obligaciones tributarias, así como para el cumplimiento de notificaciones, requerimientos oficiales o de carácter judicial.
+Instituciones, organizaciones o entidades del sector financiero (integrantes y auxiliares o de apoyo), para selección de riesgos y prevención de fraudes.<br>
+En caso de que realicemos alguna transferencia adicional que requiera su consentimiento expreso, se recabará el mismo previamente.<br>
+Usted podrá ejercer su derecho de Revocación, así como sus derechos ARCOIV, mediante el llenado de los formularios que se encuentran disponibles en la página de Internet www.avalmex.com.mx (en la sección “Aviso de Privacidad”). Para facilitar el llenado de dichos formularios, Valmex pone a su disposición guías, plazos y procedimientos didácticos, en dicha página.<br>
+Para dar trámite a sus solicitudes de Revocación o ARCO, deberá proporcionar su escrito con atención al Encargado de Datos Personales mediante correo electrónico a la dirección cumplimiento@gnp.com.mx<br>
+Además del ejercicio de sus derechos de Revocación o ARCO, usted podrá limitar el uso o divulgación de sus datos personales, mediante su inscripción en el Registro Público de Usuarios Personas Físicas (REUS) www.condusef.gob.mx<br><br>
+Valmex en su sitio Web utiliza cookies para grabar la información de la sesión, tales como cotización o información específica sobre qué páginas visitó el usuario, pero dicha información es utilizada sobre una base anónima y agregada de tal manera que no podrá ser identificado en ella.<br>
+Los sitios pueden permitir emitir publicidad o la ejecución de funciones de terceros que envían "cookies" al equipo de cómputo de los usuarios. Mediante el uso de estas "cookies" no se identifica personalmente a los usuarios, únicamente a sus equipos de cómputo.<br>
+Los usuarios podrán cambiar sus opciones a través de sus equipos de cómputo y/o navegador de Internet para dejar de aceptar "cookies" o bien confirmar si las permiten o rechazan. Sin embargo, si desactivas las “cookies” puede ocasionar, no tener acceso a algunas de las funciones personalizadas de nuestro Sitio Web.<br>
+En caso de realizar cambios o actualizaciones al presente Aviso, Valmex los publicará de manera generalizada en comunicados colocados en nuestras oficinas, por los medios de comunicación que utilicemos con usted y en la página de internet www.avalmex.com.mx.<br>
+Para cualquier asunto o duda relacionada con este Aviso de Privacidad, puede contactarnos al correo electrónico cumplimiento@gnp.com.mx o bien, al teléfono 55 51281383.<br><br>
+Fecha de última actualización del presente Aviso de Privacidad: 17 de Junio de 2020.<br>
+En todo caso recomendamos visite nuestra página de internet frecuentemente.<br>
+En caso de alguna duda puede usted consultar al INAI en www.inai.org.mx<br><br>
+Artículo 87-J, Valmex no requiere de la autorización de la SHCP para su constitución y operación<br>
+Artículo 56, Valmex  está sujeto a la Inspección y Vigilancia de la CNBV
+<br><br>
+Documentación para el ejercicio de los derechos ARCO:<br><br>
+Formato para el ejercicio de los derechos ARCO.xls<br>
+Guía para el ejercicio de los derechos ARCO.pptx<br>
+Formato para la revocación y negativa.xls<br>
+Guía para revocar el consentimiento.pptx<br>
+Guía para solicitar la negativa.pptx<br>
+[i] Cuando el Titular entrega los datos de forma personal y física a Valmex o a su representante.<br>
+[ii] Cuando el Titular entrega los datos de forma directa, como: Medios electrónicos, ópticos, sonoros, visuales, o cualquier otra tecnología como correo postal, internet o vía telefónica.<br>
+[iii] Cuando Valmex obtiene los datos de forma indirecta como: fuente de acceso público o transferencia.<br>
+[iv] ARCO: derechos de Acceso, Rectificación, Cancelación y Oposición.<br>
+
+
+        </p>
+    </div>
+
+<section class="contact" id="contactanos">
+    <div class="u-wrapper">
+ 
+        <form id="form" action="" class="form">
+          
+            <div class="form1" >
+
+                <h3 class="tag"><span>CONTÁCTANOS</span></h3>
+                <p>Si te interesa alguno de nuestros planes o programas<br> escribenos aquí:</p>
+              <div class="contact-content">
+
+               <div class="nombre">
+               <label for="name">NOMBRE<span>*</span></label><br>
+               <input name="name" required type="text" id="name" >
+               </div>
+               <div class="correo">
+               <label for="email">CORREO ELECTRÓNICO<span>*</span></label><br>
+               <input name="email" type="text" id="email" required placeholder="">
+               </div>
+        
+        
+             </div>
+            </div>
+             <div class="form2">
+
+                <div class="empresa">
+                    <label for="empresa">EMPRESA<span>*</span></label><br>
+                    <input name="empresa" type="text" id="empresa" required placeholder="">
+                  </div>
+
+                <div class="estado">
+                    <label for="estado">¿EN QUÉ ESTADO RADICAS?<span>*</span></label><br>
+                    <input name="estado" type="text" id="estado" required placeholder="">
+                  </div>
+
+        <label for="message">MENSAJE</label>
+        <div class="mensaje">
+          
+          <textarea id="message" name="message" id="" cols="52" rows="5"></textarea>
+        </div>
+        
+          <button type="submit" class="btn primary full">Enviar</button>
+             </div>
+        </form>
+
+        <a href="mailto:atencion-comercial-valmex@gnp.com.mx" id="trucazo"></a>
+      </div>
+    </div>
+  </section>
+   
+
+
+<div class="footer-gray">
+
+    <div class="right">
+        <ul><h3>Sobre nosotros</h3><br>
+            <li><a href="#quienessom" onclick="mostrarquienessom();">Quienes somos</a></li>
+            <li><a href="#contactanos" class="href">Contactanos</a></li>
+            
+            
+        </ul>
+    </div>
+
+    <div class="left">
+        <ul><h3>Marco Legal</h3><br>
+
+            <li><a href="#aviso-privacidad" onclick="mostraravisoprivacidad();">Avisos de Privacidad</a></li>
+            <li><a href="https://www.buro.gob.mx/" target="_blank">Buró de Entidades Financieras</a></li>
+            <li><a href="https://www.condusef.gob.mx/" target="_blank">Unidad Especializada de Atencion a Usuarios</a></li>
+        </ul>
+    </div>
+
+    <div class="center">
+        
+        <ul class="uno"><h3 >Sitios de interés</h3><br>
+            <li><a href="https://www.gnp.com.mx/" target="_blank">GNP Seguros</a></li>
+            <li><a href="https://www.condusef.gob.mx/" target="_blank">CONDUSEF</a></li>
+            <li><a href="https://www.inai.org.mx/" target="_blank">INAI</a></li>
+        </ul>
+    </div>
+
+    <div class="iconos-footer">
+        <ul><h3>Contacto</h3><br>
+        <li>Av. División del Nte. 2555 Colonia. Del Carmen,<br>
+             Coyoacán, 04100 Ciudad de México, CDMX</li>
+        <li>Teléfono: (55) 57052618 Ext. 2104 y 2116</li>
+        <li>Email: atencion-comercial-valmex@gnp.com.mx</li>
+        </ul>
+        <div class="icons">
+            
+           <a href="https://www.linkedin.com/company/valmex-soluciones-financieras/" target="_blank"> <img src="/img/icon-in.png"></a>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7XDDGN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+<script src="menu.js"></script>
+    
+</body>
+</html>
